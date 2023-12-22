@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+<form [formGroup]="form" class="form">
+
+    <div>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" formControlName="name">
+
+    </div>
+
+    <div>
+
+        <label for="mail">Mail</label>
+        <input type="text" name="mail" id="mail" formControlName="mail">
+
+    </div>
+
+    <div>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" formControlName="age">
+
+    </div>
+
+    <div>
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="male" formControlName="gender">Male
+        <input type="radio" name="gender"  value="female" formControlName="gender">Female
+
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-success mt-2 ms-5" (click)="postData()">
+            Submit
+        </button>
+    </div>
+
+</form>
+
+
+
+<div>
+    <button class="btn btn-danger mt-5 ms-5" (click)="GoToHome()">
+        back
+    </button>
+</div>
+
+
+
+
+
+
+
